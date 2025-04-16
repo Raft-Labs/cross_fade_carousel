@@ -104,4 +104,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.Developed by [Rohan Kumar Panigrahi](https://www.linkedin.com/in/rohan-kumar-panigrahi-187a12193/) at [RaftLabs](https://www.raftlabs.com/).
