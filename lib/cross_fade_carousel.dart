@@ -121,7 +121,7 @@ class _CrossFadeCarouselState extends State<CrossFadeCarousel> {
         currentIndex = 0;
       }
     } else {
-      if (currentIndex <= 0) {
+      if (currentIndex < 0) {
         currentIndex = widget.children.length - 1;
       }
     }
