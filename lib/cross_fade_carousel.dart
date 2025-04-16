@@ -92,7 +92,7 @@ class _CrossFadeCarouselState extends State<CrossFadeCarousel> {
   @override
   void initState() {
     super.initState();
-    if (widget.autoSwitch) {
+    if (widget.autoSwitch && widget.children.length > 1) {
       autoSwitchTimer = Timer.periodic(widget.autoSwitchDuration, (timer) {
         if (lastUserInteracted == null ||
             DateTime.now().difference(lastUserInteracted!).inSeconds >
@@ -159,7 +159,7 @@ class _CrossFadeCarouselState extends State<CrossFadeCarousel> {
                 }
               },
               onHorizontalDragEnd: (details) {
-                if (showFade) {
+                if (showFade || widget.children.length < 2) {
                   return;
                 }
 

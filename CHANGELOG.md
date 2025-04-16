@@ -1,3 +1,6 @@
+## 1.0.3
+
+* Fixed auto switch edge case
 ## 1.0.2
 
 * Docs updated and under limit edge case fix

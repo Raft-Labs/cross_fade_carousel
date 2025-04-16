@@ -1,6 +1,6 @@
 name: cross_fade_carousel
-description: "A beautiful and customizable Flutter carousel widget that smoothly fades between its children widgets. Perfect for creating engaging image galleries, feature showcases, or promotional content in your Flutter applications."
-version: 1.0.2
+description: "A Customizable Flutter carousel with smooth fade transitions."
+version: 1.0.3
 repository: "https://github.com/Rohan-raftlabs/cross_fade_carousel.git"
 
 
