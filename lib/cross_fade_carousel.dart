@@ -20,6 +20,7 @@ class CrossFadeCarousel extends StatefulWidget {
       this.indicatorColor = Colors.black,
       this.customIndicatorBuilder,
       this.onItemTap,
+      this.onIndexChanged,
       this.borderRadius});
 
   @override
@@ -27,6 +28,9 @@ class CrossFadeCarousel extends StatefulWidget {
 
   /// The list of children to be displayed in the carousel.
   final List<Widget> children;
+
+  /// callback for when the index of the current item changes return the current index
+  final Function(int currentIndex)? onIndexChanged;
 
   /// The aspect ratio of the carousel. common values are 2/1 or 16/9.
   final double aspectRatio;
@@ -133,6 +137,9 @@ class _CrossFadeCarouselState extends State<CrossFadeCarousel> {
         });
       }
     });
+    if (widget.onIndexChanged != null) {
+      widget.onIndexChanged!(currentIndex);
+    }
   }
 
   @override

@@ -83,6 +83,7 @@ The `CrossFadeCarousel` widget accepts the following parameters:
 | `customIndicatorBuilder` | `Widget Function(int, int)?` | `null` | Custom builder for indicator UI |
 | `onItemTap` | `Function(int)?` | `null` | Callback when an item is tapped |
 | `pauseAutoSwitchAfterUserActivityDelay` | `Duration` | `15 seconds` | Delay before resuming auto-switch after user interaction |
+| `onIndexChanged` | `Function(int)?` | `null` | Callback when the index of the current item changes return the current index |
 
 ## Gesture Support
 
